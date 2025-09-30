@@ -1,0 +1,35 @@
+{
+  "name": "Staff",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Full name of the staff member"
+    },
+    "role": {
+      "type": "string",
+      "enum": [
+        "Principal",
+        "Trustee",
+        "Admin"
+      ],
+      "description": "Role in the institution"
+    },
+    "photo_url": {
+      "type": "string",
+      "description": "URL to staff member's photo"
+    },
+    "message": {
+      "type": "string",
+      "description": "Personal message or quote"
+    },
+    "qualification": {
+      "type": "string",
+      "description": "Educational qualification and experience"
+    }
+  },
+  "required": [
+    "name",
+    "role"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Teacher",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Full name of the teacher"
+    },
+    "photo_url": {
+      "type": "string",
+      "description": "URL to teacher's photo"
+    },
+    "subjects": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Subjects taught by the teacher"
+    },
+    "qualification": {
+      "type": "string",
+      "description": "Educational qualification"
+    },
+    "experience": {
+      "type": "string",
+      "description": "Years of teaching experience"
+    }
+  },
+  "required": [
+    "name",
+    "subjects"
+  ]
+}

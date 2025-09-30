@@ -1,0 +1,61 @@
+{
+  "name": "Admission",
+  "type": "object",
+  "properties": {
+    "fullName": {
+      "type": "string",
+      "description": "Parent or Student's Full Name"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Contact Phone Number"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "description": "Contact Email Address"
+    },
+    "admissionType": {
+      "type": "string",
+      "enum": [
+        "Internal",
+        "External"
+      ],
+      "description": "Type of admission"
+    },
+    "previousSchool": {
+      "type": "string",
+      "description": "Name of the previous school (for external admissions)"
+    },
+    "admissionClass": {
+      "type": "string",
+      "description": "Class for which admission is sought"
+    },
+    "previousResult": {
+      "type": "string",
+      "enum": [
+        "Pass",
+        "Fail"
+      ],
+      "description": "Result of the previous academic year"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Pending",
+        "Contacted",
+        "Confirmed"
+      ],
+      "default": "Pending",
+      "description": "Status of the admission inquiry"
+    }
+  },
+  "required": [
+    "fullName",
+    "phone",
+    "email",
+    "admissionType",
+    "admissionClass",
+    "previousResult"
+  ]
+}
